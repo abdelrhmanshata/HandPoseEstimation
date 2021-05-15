@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UI.CameraActivity">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar" />
+
+    <ImageView
+        android:id="@+id/caverTop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#BF000000"
+        app:layout_constraintBottom_toTopOf="@id/borderIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/caverBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#BF000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/borderIV"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/caverRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#BF000000"
+        app:layout_constraintBottom_toTopOf="@id/caverBottom"
+        app:layout_constraintEnd_toStartOf="@id/borderIV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caverTop"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/caverLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#BF000000"
+        app:layout_constraintBottom_toTopOf="@id/caverBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/borderIV"
+        app:layout_constraintTop_toBottomOf="@id/caverTop"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnCapture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_baseline_camera_24"
+        android:src="@drawable/ic_baseline_camera_24"
+        android:text="CAPTURE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/borderIV"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:background="@drawable/border_larg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".5"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/layoutTool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/cancelIV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_baseline_cancel_24" />
+
+        <ImageView
+            android:id="@+id/saveIV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_baseline_check_circle_24" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/borderIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/upIV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_baseline_arrow_up_24_green" />
+
+        <LinearLayout
+            android:id="@+id/left_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/leftIV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_baseline_arrow_left_24_green" />
+
+            <ImageView
+                android:id="@+id/rightIV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_baseline_arrow_right_24_green" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/downIV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/left_right"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_baseline_arrow_down_24_green" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

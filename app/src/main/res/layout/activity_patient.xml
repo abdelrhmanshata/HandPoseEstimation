@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Patient.PatientActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:active_centre_button_background_color="#4ab5af"
+        app:active_centre_button_icon_color="@color/white"
+        app:centre_button_color="#4ab5af"
+        app:inactive_centre_button_icon_color="@color/white"
+        app:inactive_item_color="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:space_background_color="#4ab5af"
+        app:space_item_icon_only_size="20dp"
+        app:space_item_icon_size="30dp" />
+
+    <!--  <com.ismaeldivita.chipnavigation.ChipNavigationBar
+          android:id="@+id/chipNavigation"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:elevation="16dp"
+          android:layout_margin="8dp"
+          android:layout_alignParentBottom="true"
+          android:background="@drawable/rounded"
+          app:cnb_menuResource="@menu/nav_item" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

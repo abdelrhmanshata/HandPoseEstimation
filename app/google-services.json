@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "888276098492",
+    "firebase_url": "https://hand-pose-estimation-c7958-default-rtdb.firebaseio.com",
+    "project_id": "hand-pose-estimation-c7958",
+    "storage_bucket": "hand-pose-estimation-c7958.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888276098492:android:7ef576916406794a649fb9",
+        "android_client_info": {
+          "package_name": "com.shata.hand_pose_estimation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888276098492-jq7hce4iks48v3f7vlrokkok9dlsakg3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shata.hand_pose_estimation",
+            "certificate_hash": "c055579f47ac5a2cb29f3af94aef34c83acb1e40"
+          }
+        },
+        {
+          "client_id": "888276098492-to1gi0erp0rlhgi2f5bohjs6qoh2hsev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyvwcOrBhydsvZ0B2Irc76EEeP5OdZ2ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888276098492-to1gi0erp0rlhgi2f5bohjs6qoh2hsev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888276098492:android:84335748bb0abe5a649fb9",
+        "android_client_info": {
+          "package_name": "com.shata.hand_pose_estimation_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888276098492-to1gi0erp0rlhgi2f5bohjs6qoh2hsev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyvwcOrBhydsvZ0B2Irc76EEeP5OdZ2ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888276098492-to1gi0erp0rlhgi2f5bohjs6qoh2hsev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

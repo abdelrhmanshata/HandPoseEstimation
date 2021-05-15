@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="LigtGreen">#4ab5af</color>
+
+    <color name="background">#000011</color>
+
+    <color name="colorRed">#FF0000</color>
+    <color name="colorCyan">#00BCD4</color>
+    <color name="colorBlueDark">#0000FF</color>
+    <color name="colorDarkBlue">#0000A0</color>
+    <color name="colorYellow">#FFFF00</color>
+    <color name="colorLightBlue">#ADD8E6</color>
+    <color name="colorGreen">#008000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackLight">#80000000</color>
+    <color name="colorBrown">#A52A2A</color>
+    <color name="colorBrownLight">#BFA52A2A</color>
+    <color name="colorGray">#80808080</color>
+    <color name="colorSliver">#C0C0C0C0</color>
+    <color name="colorPurpleDark">#800080</color>
+    <color name="colorLime">#00FF00</color>
+    <color name="colorOlive">#808000</color>
+    <color name="colorMaroon">#800000</color>
+    <color name="colorOrange">#FFA500</color>
+
+    <color name="colorBlue">#28A2CF</color>
+    <color name="colorBlueT">#6428a2cf</color>
+    <color name="colorPurple">#A130FF</color>
+    <color name="colorPurpleT">#64a130ff</color>
+    <color name="colorDark">#3A3E41</color>
+
+    <color name="darkgray">#6c6c6c</color>
+
+    <color name="colorPrimary">#6177FC</color>
+    <color name="colorPrimaryDark">#6177FC</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="lightGray">#F2F2F2</color>
+    <color name="disabledBtnBg">#999999</color>
+
+</resources>

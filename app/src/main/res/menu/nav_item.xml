@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/profilePatient"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="  Profile  "
+        app:cnb_backgroundColor="@color/colorBlueDark"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_linked_camera_24"
+        android:title=" Camera "
+        app:cnb_backgroundColor="@color/colorBlueDark"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+
+    <item
+        android:id="@+id/progressPatient"
+        android:icon="@drawable/ic_baseline_assessment_24"
+        android:title="Progress"
+        app:cnb_backgroundColor="@color/colorBlueDark"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+</menu>

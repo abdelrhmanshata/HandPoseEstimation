@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Hand_Pose_Estimation</string>
+
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <string name="Login">Login</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="forgetPassword">forget Password?</string>
+
+    <string name="let_s_get_started">Let\'s Get Started !</string>
+    <string name="create">Create your account to get all feature</string>
+
+
+    <string name="a5">Login</string>
+    <string name="a25">Login</string>
+    <string name="a53">Login</string>
+    <string name="a54">Login</string>
+    <string name="a55">Login</string>
+    <string name="username_example_com">username@example.com</string>
+    <string name="todo">TODO</string>
+    <string name="have_not_account_register">have not account register?</string>
+    <string name="hintPass">**********</string>
+    <string name="sign_up_by">Sign Up By</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">User Name</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="aready_have_an_account_login_here">Aready have an account ? Login here</string>
+    <string name="register">Register</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="recover">Recover</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="didn_t_get_otp_resend">Didn\'t get OTP? <b>Resend</b></string>
+    <string name="patient_name">Patient Name</string>
+    <string name="choose_gender">Choose Gender</string>
+
+
+    <string name="text">
+    Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets. Android is developed by a consortium of developers known as the Open Handset Alliance and commercially sponsored by Google. It was unveiled in November 2007, with the first commercial Android device launched in September 2008.
+    </string>
+</resources>

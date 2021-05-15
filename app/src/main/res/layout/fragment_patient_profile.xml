@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.Patient.Fragment.ProfilePatientFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/userBackground"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/LigtGreen" />
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_logout_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/defult"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layout"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Information"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/border_card"
+                    android:padding="8dp"
+                    app:cardBackgroundColor="#fbfbfb"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ProgressBar
+                        android:id="@+id/progressCircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@id/cv"
+                        app:layout_constraintEnd_toEndOf="@id/cv"
+                        app:layout_constraintStart_toStartOf="@id/cv"
+                        app:layout_constraintTop_toTopOf="@id/cv"
+                        tools:ignore="MissingConstraints" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:hint="@string/user_name"
+                            app:boxStrokeColor="@color/LigtGreen"
+                            app:endIconMode="clear_text"
+                            app:shapeAppearance="@style/Rounded"
+                            app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/userName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:hint="@string/Email"
+                            android:id="@+id/layoutUserEmail"
+                            app:boxStrokeColor="@color/LigtGreen"
+                            app:endIconMode="clear_text"
+                            app:shapeAppearance="@style/Rounded"
+                            app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/userEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textEmailAddress"
+                                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:hint="@string/phone_number"
+                            app:boxStrokeColor="@color/LigtGreen"
+                            app:endIconMode="clear_text"
+                            app:shapeAppearance="@style/Rounded"
+                            app:startIconDrawable="@drawable/ic_baseline_local_phone_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/userPhoneNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="phone"
+                                tools:ignore="TextContrastCheck" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/editDataPatient"
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/bt_uidesign_card"
+                            android:gravity="center"
+                            android:text="Edit Data"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+        <!--
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/layout">
+                    &lt;!&ndash; add all detalis about user &ndash;&gt;
+
+                    <RelativeLayout
+                        android:id="@+id/rlayout"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            tools:ignore="MissingConstraints">
+
+                            <ProgressBar
+                                android:id="@+id/progressCircle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="@id/cv"
+                                app:layout_constraintEnd_toEndOf="@id/cv"
+                                app:layout_constraintStart_toStartOf="@id/cv"
+                                app:layout_constraintTop_toTopOf="@id/cv"
+                                tools:ignore="MissingConstraints" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:hint="@string/user_name"
+                                    app:endIconMode="clear_text"
+                                    app:boxStrokeColor="@color/LigtGreen"
+                                    app:shapeAppearance="@style/Rounded"
+                                    app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/userName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="text"
+                                        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:hint="@string/Email"
+                                    app:endIconMode="clear_text"
+                                    app:boxStrokeColor="@color/LigtGreen"
+                                    app:shapeAppearance="@style/Rounded"
+                                    app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/userEmail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="textEmailAddress"
+                                        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:hint="@string/phone_number"
+                                    app:boxStrokeColor="@color/LigtGreen"
+                                    app:shapeAppearance="@style/Rounded"
+                                    app:endIconMode="clear_text"
+                                    app:startIconDrawable="@drawable/ic_baseline_local_phone_24">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/userPhoneNumber"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="phone"
+                                        tools:ignore="TextContrastCheck" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <Button
+                                    android:id="@+id/continueRegister"
+                                    android:layout_width="@dimen/_200sdp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="12dp"
+                                    android:background="@drawable/bt_uidesign"
+                                    android:gravity="center"
+                                    android:text="Continue"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/_16ssp"
+                                    android:textStyle="bold"
+                                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+                </ScrollView>
+        -->
+    </RelativeLayout>
+
+
+</FrameLayout>

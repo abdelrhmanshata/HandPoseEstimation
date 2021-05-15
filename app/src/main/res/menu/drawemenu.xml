@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_account_circle_24" />
+
+    <item
+        android:id="@+id/info"
+        android:title="Info"
+        android:icon="@drawable/ic_baseline_info_24" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_exit_to_app_24" />
+
+
+</menu>
